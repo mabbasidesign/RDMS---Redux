@@ -18,7 +18,6 @@ export default function(state ={}, action){
         case "MOVIES_LIST":
             return {...state, movies:action.payload}
         break;
-
         default:
             return state;
     }
