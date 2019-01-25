@@ -11,13 +11,14 @@
 
 // 2- Reducer finds a match
 
-const state = 0;
+// const state = 0;
 
 export default function(state ={}, action){
     switch(action.type){
         case "MOVIES_LIST":
             return {...state, movies:action.payload}
-        break;
+        case "DIR_LIST":
+            return {...state, directors:action.payload}
         default:
             return state;
     }
